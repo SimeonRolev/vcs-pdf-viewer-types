@@ -21,7 +21,7 @@
  * ```
  */
 interface DataSheets {
-    [name: string]: DataSets; 
+    [name: string]: DataSets;
 }
 
 interface DataSets {
@@ -40,6 +40,6 @@ interface DataSet {
     label: string;
     sourceOfData: string;
     isSeparator?: true;
-};
+}
 
-export { DataSheets }
+export type { DataSheets }

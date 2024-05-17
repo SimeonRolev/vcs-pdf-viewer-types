@@ -81,4 +81,4 @@ interface RecordField {
     value: string;
 }
 
-export { SheetLayer, ChildId as ChildId, Point }
+export type { SheetLayer, Child, ChildId, Point }

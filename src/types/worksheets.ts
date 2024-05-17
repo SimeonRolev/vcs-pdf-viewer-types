@@ -1,7 +1,5 @@
 import { ChildId } from "./sheet";
 
-type StingNumber = string;
-
 /**
  * @property {string} excelFile - Encoded .xlsx file. Read it with an Excel reader.
  * @property {object} databaseRowMap - Each page of the .xlsx file is a Worksheet (excelPageNumber).
@@ -22,8 +20,8 @@ type StingNumber = string;
 interface Worksheets {
     excelFile: string;
     databaseRowMap: {
-        [excelPageNumber: StingNumber]: {
-            [excelPageRow: StingNumber]: ChildId[]
+        [excelPageNumber: number]: {
+            [excelPageRow: number]: ChildId[]
         }
     };
 }

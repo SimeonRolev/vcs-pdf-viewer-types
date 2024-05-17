@@ -1,9 +1,3 @@
-enum RoundingStyle {
-    Decimal = "Decimal",
-    Fractional = "Fractional",
-    FractionalAndDecimal = "FractionalAndDecimal",
-}
-
 /**
  * @property {string} specialUnitDivider - Optional: If those are pesent, we measure in Feet + Inches
  * @property {string} specialUnitMark - Optional: If those are pesent, we measure in Feet + Inches
@@ -13,7 +7,7 @@ interface Units {
     decimalRoundingBase: number;
     fractionStyle: number;
     fractionalPrecision: number;
-    roundingStyle: RoundingStyle;
+    roundingStyle: "Decimal" | "Fractional" | "FractionalAndDecimal";
     showLeadingZeroes: boolean;
     showThousandSep: boolean;
     showTrailingZeroes: boolean;
